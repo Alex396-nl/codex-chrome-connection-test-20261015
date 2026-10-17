@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#edf2f5">
+  <title>今日行程 · 视觉验证 V0.7</title>
+  <link rel="preload" as="image" href="assets/浅草寺.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <main class="page-content">
+      <header class="day-header">
+        <div class="date-line">
+          <time class="date" datetime="2026-10-21">
+            <span class="month">10 月</span>
+            <strong>21</strong>
+            <span class="day-suffix">日</span>
+          </time>
+          <span class="weekday">星期三</span>
+          <span class="date-arrows" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="m14.5 5-7 7 7 7"/></svg>
+            <svg viewBox="0 0 24 24"><path d="m9.5 5 7 7-7 7"/></svg>
+          </span>
+        </div>
+        <div class="day-meta">
+          <span class="day-mark">DAY <strong>03</strong></span>
+          <span class="meta-divider" aria-hidden="true"></span>
+          <span class="city">东京</span>
+          <span class="area">浅草 · 上野</span>
+          <span class="sample-tag">示例</span>
+        </div>
+      </header>
+
+      <section class="quick-links" aria-label="美食与购物入口">
+        <div class="quick-card">
+          <span class="quick-icon food-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M7 3v6m4-6v6m-2-6v18M17 3v18m0-18c-3 3-3 8 0 10"/></svg>
+          </span>
+          <span class="quick-copy"><strong>美食</strong><small>浅草 · 上野</small></span>
+          <svg class="quick-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+        <div class="quick-card">
+          <span class="quick-icon shop-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Zm3 0V6a4 4 0 0 1 8 0v2"/></svg>
+          </span>
+          <span class="quick-copy"><strong>购物</strong><small>浅草 · 上野</small></span>
+          <svg class="quick-chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+        </div>
+      </section>
+
+      <section class="itinerary" aria-labelledby="itinerary-title">
+        <div class="section-heading">
+        <h1 id="itinerary-title">今日行程</h1>
+        </div>
+        <div class="place-list">
+          <article class="place-row">
+            <span class="place-number">01</span>
+            <img class="place-photo" src="assets/浅草寺.jpg" alt="东京浅草寺本堂与参拜人群" width="1280" height="800">
+            <div class="place-copy"><h2>浅草寺</h2><p>浅草 <span>·</span> 寺社与街巷</p></div>
+            <span class="stay-time">90 分钟</span>
+          </article>
+          <article class="place-row">
+            <span class="place-number">02</span>
+            <img class="place-photo" src="assets/上野公园.jpg" alt="上野公园喷泉与林荫步道" width="1600" height="1064" loading="lazy">
+            <div class="place-copy"><h2>上野公园</h2><p>上野 <span>·</span> 公园漫步</p></div>
+            <span class="stay-time">90 分钟</span>
+          </article>
+          <article class="place-row">
+            <span class="place-number">03</span>
+            <img class="place-photo" src="assets/不忍池.jpg" alt="不忍池荷叶与沿湖步道" width="1280" height="853" loading="lazy">
+            <div class="place-copy"><h2>不忍池</h2><p>上野 <span>·</span> 湖畔风景</p></div>
+            <span class="stay-time">60 分钟</span>
+          </article>
+        </div>
+      </section>
+
+      <footer class="image-credits">
+        <span class="credits-label">示例图片</span>
+        <span><a href="https://commons.wikimedia.org/wiki/File:Sensoji_Temple_(40909716384).jpg" target="_blank" rel="noopener noreferrer">浅草寺 · Ajay Suresh</a>（<a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer">CC BY 2.0</a>）</span>
+        <span><a href="https://commons.wikimedia.org/wiki/File:Ueno_Park_fountain.JPG" target="_blank" rel="noopener noreferrer">上野公园 · wHyC@Re</a>（<a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener noreferrer">CC BY 3.0</a>）</span>
+        <span><a href="https://commons.wikimedia.org/wiki/File:Walkway_by_Shinobazu_Pond_in_Ueno_Park,_Ueno-k%C5%8Den,_Tait%C5%8D,_Tokyo,_Japan,_2024_May.jpg" target="_blank" rel="noopener noreferrer">不忍池 · Simo Räsänen</a>（<a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>）</span>
+        <span class="crop-note">缩略图按版式裁切</span>
+      </footer>
+    </main>
+
+    <nav class="bottom-nav" aria-label="底部导航">
+      <div class="nav-item selected" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18.5 8.5 6l7 12.5L20 6M8.5 6 12 18.5M4 18.5h16"/></svg>
+        <span>今日行程</span>
+      </div>
+      <div class="nav-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 10h16m-11 4h.01M12 14h.01M16 14h.01M8 18h.01"/></svg>
+        <span>全部行程</span>
+      </div>
+      <div class="nav-item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5h17v13h-17zM3.5 7.5l2-4h13l2 4M8.5 12.5h7"/></svg>
+        <span>出行资料</span>
+      </div>
+    </nav>
+  </div>
+</body>
+</html>
