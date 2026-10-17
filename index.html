@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light"><title>今日行程 · 视觉样板 V0.5</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="icon-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+<symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></symbol>
+<symbol id="route" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="19" r="2"/><path d="M8 5h7a4 4 0 0 1 0 8H9a3 3 0 0 0 0 6h7"/></symbol>
+<symbol id="calendar" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="16" rx="3"/><path d="M8 3v4m8-4v4M4 11h16m-11 4h.01M12 15h.01M16 15h.01"/></symbol>
+<symbol id="folder" viewBox="0 0 24 24"><path d="M3 8V6a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8Z"/></symbol>
+<symbol id="food" viewBox="0 0 24 24"><path d="M4 3v5a3 3 0 0 0 6 0V3M7 3v18m11 0V3c-4 3-4 10 0 10"/></symbol>
+<symbol id="bag" viewBox="0 0 24 24"><path d="M5 8h14l1 13H4L5 8Zm3 0V6a4 4 0 0 1 8 0v2"/></symbol>
+<symbol id="arrow" viewBox="0 0 24 24"><path d="M6 18 18 6M7 6h11v11"/></symbol>
+<symbol id="edit" viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L20 8a2 2 0 0 0-5-5L4 14l-1 7Z"/></symbol>
+</defs></svg>
+<div class="app">
+<header class="day-header">
+<div class="eyebrow"><span>日本漫游</span><span class="day-pill">DAY 03</span></div>
+<div class="date-row"><div><p class="date">10 月 21 日 <span>星期三</span></p><h1>在东京，慢慢走。</h1></div><div class="date-controls"><button aria-label="前一天（静态展示）" aria-disabled="true"><svg class="icon previous"><use href="#chevron"/></svg></button><button aria-label="后一天（静态展示）" aria-disabled="true"><svg class="icon"><use href="#chevron"/></svg></button></div></div>
+<p class="city"><svg class="icon"><use href="#pin"/></svg>东京 <span class="divider">/</span> 浅草 · 上野 <span class="sample">示例行程</span></p>
+</header>
+<main>
+<div class="section-heading"><div><h2>今日行程</h2><span class="count">3 个地点 · 建议游览 4 小时</span></div><button class="edit" aria-disabled="true"><svg class="icon"><use href="#edit"/></svg>调整行程</button></div>
+<p class="duration-note">仅合计停留时间，不含交通与用餐</p>
+<section class="places" aria-label="今日地点，静态展开示例">
+<article class="place expanded">
+<div class="place-heading"><span class="step selected">01</span><div class="place-title"><h3>浅草寺</h3><p>浅草 <span>·</span> 寺社与街巷</p></div><span class="time"><svg class="icon"><use href="#clock"/></svg>90 分钟</span><svg class="icon collapse"><use href="#chevron"/></svg></div>
+<div class="place-body"><figure class="hero-image"><img src="assets/浅草寺-临时占位.svg" alt="浅草寺景点图片临时占位示意，并非实景照片" width="640" height="280"><figcaption>临时图片占位</figcaption></figure><p class="description">从雷门走进仲见世商店街，沿途慢逛，再到本堂看看。为街巷里的小店留一点随心停下的时间。</p><div class="place-footer"><span class="place-caption">SENSŌ-JI · ASAKUSA</span><a class="navigate" href="https://www.google.com/maps/search/?api=1&amp;query=Senso-ji+Tokyo" target="_blank" rel="noopener noreferrer"><svg class="icon"><use href="#arrow"/></svg>Google Maps 导航</a></div></div>
+</article>
+<article class="place compact"><span class="step">02</span><img class="thumbnail" src="assets/上野公园-临时占位.svg" alt="上野公园临时图片占位" width="48" height="48"><div class="place-title"><h3>上野公园</h3><p>上野 <span>·</span> 公园漫步</p></div><span class="time">90 分钟</span><svg class="icon"><use href="#chevron"/></svg></article>
+<article class="place compact"><span class="step">03</span><img class="thumbnail" src="assets/不忍池-临时占位.svg" alt="不忍池临时图片占位" width="48" height="48"><div class="place-title"><h3>不忍池</h3><p>上野 <span>·</span> 湖畔风景</p></div><span class="time">60 分钟</span><svg class="icon"><use href="#chevron"/></svg></article>
+</section>
+<section class="recommendations" aria-label="餐饮与购物参考"><button aria-disabled="true"><span class="recommend-icon"><svg class="icon"><use href="#food"/></svg></span><span><strong>美食</strong><small>浅草 · 上野精选</small></span><svg class="icon"><use href="#chevron"/></svg></button><button aria-disabled="true"><span class="recommend-icon"><svg class="icon"><use href="#bag"/></svg></span><span><strong>购物</strong><small>沿途好逛的小店</small></span><svg class="icon"><use href="#chevron"/></svg></button></section>
+</main>
+<nav class="bottom-nav" aria-label="主导航"><button class="active" aria-current="page"><svg class="icon"><use href="#route"/></svg><span>今日行程</span></button><button aria-disabled="true"><svg class="icon"><use href="#calendar"/></svg><span>全部行程</span></button><button aria-disabled="true"><svg class="icon"><use href="#folder"/></svg><span>出行资料</span></button></nav>
+</div>
+</body></html>
